@@ -1,0 +1,41 @@
+name: 💡 建议 / 反馈
+description: 提出新玩法、平衡性调整、体验优化等想法
+title: "[建议] "
+labels: ["建议", "待确认"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出你的想法！好点子会让服务器越来越好~
+  - type: input
+    id: player
+    attributes:
+      label: 游戏内 ID / 昵称
+      placeholder: 例如：柠檬
+    validations:
+      required: false
+  - type: dropdown
+    id: category
+    attributes:
+      label: 反馈类型
+      options:
+        - 新玩法 / 新功能
+        - 平衡性调整
+        - 体验优化
+        - 活动 / 商店 / 道具
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 详细描述
+      description: 你希望增加或调整什么？为什么？
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: 期望达到的效果
+    validations:
+      required: false
